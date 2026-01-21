@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>多位数乘法动画生成器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🔢 多位数乘法动画生成器</h2>
+    <p>输入两个整数，自动生成竖式计算动画！</p>
+
+    <form id="formulaForm">
+      <input type="number" id="num1" value="123" min="1" /> ×
+      <input type="number" id="num2" value="45" min="1" /><br /><br />
+      <label><input type="checkbox" id="highQuality" /> 高质量（较慢）</label><br /><br />
+      <button type="submit">🎬 生成动画</button>
+    </form>
+
+    <div id="status" class="loading"></div>
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
