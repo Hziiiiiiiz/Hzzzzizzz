@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS  # 解决跨域问题
 import os
-from demo7 import render_multiplication
+from backend.demo7 import render_multiplication
 
 app = Flask(__name__)
 CORS(app)  # 允许所有域名访问 API（生产环境可限制）
